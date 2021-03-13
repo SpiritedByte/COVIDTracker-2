@@ -1,14 +1,19 @@
-# Import modules
+# Built-in modules
 import os
 from pathlib import Path
+import time
+import platform
+import subprocess
+import sys
+
+# External modules
 import pandas as pd
 import requests
 from datetime import datetime
 from plotnine import *
 from yaspin import yaspin
-import time
 
-# VARIABLES AND INITIALISATION
+# Initlialise variables
 error_count = 0
 url_cases = 'https://coronavirus.data.gov.uk/downloads/csv/coronavirus-cases_latest.csv'
 # url_deaths = 'https://coronavirus.data.gov.uk/downloads/csv/coronavirus-deaths_latest.csv'
